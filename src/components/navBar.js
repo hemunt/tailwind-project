@@ -20,23 +20,23 @@ export function NavBar(themeData){
             <img className="h-10 w-10 object-contain "src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
             <h1 className={`pl-2 text-xl font-bold text-slate-600`}>REACT</h1>
         </div>
-        <div className={`hidden lg:block`}>
-            <ul className="font-semibold lg:flex items-center" >
+        <div className={`hidden md:block`}>
+            <ul className="font-semibold md:flex items-center" >
                 <li className="mx-[10px] cursor-pointer">Home</li>
                 <li className="mx-[10px] cursor-pointer">About Us</li>
                 <li className="mx-[10px] cursor-pointer">Contact Us</li>
                 <li className="mx-[20px] cursor-pointer" onClick={themeHandler}>{darkModIcon === "LIGHT" ? ICONS.dark: ICONS.light}</li>
             </ul>
         </div>
-        <div className={`lg:hidden block`}>
+        <div className={`md:hidden block`}>
             <div className={`cursor-pointer`}  onClick={(event)=>{
                 setIsMenuOpen(!isMenuOpen);
             }}>{ICONS.menu}</div>
         </div>
 
     </nav>
-        {isMenuOpen ? <div className={`lg:hidden block bg-[#F7F9FE]`}>
-            <ul className="font-semibold lg:flex text-center" >
+        {isMenuOpen ? <div className={`md:hidden block bg-[#F7F9FE]`}>
+            <ul className="font-semibold md:flex text-center" >
                 <li className="py-[10px] cursor-pointer">Home</li>
                 <li className="py-[10px] cursor-pointer">About Us</li>
                 <li className="py-[10px] cursor-pointer">Contact Us</li>

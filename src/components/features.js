@@ -7,13 +7,13 @@ import featuresThird from "../assets/feature2.png";
 export function OurFeatures (){
     const colors = useSelector((state) => state.appColors.value);
     return <>
-        <div className="w-full h-auto px-10 lg:px-64 bg-white py-20" >
+        <div className="w-full h-auto px-10 md:px-64 bg-white py-20" >
             <div className={`w-full  text-center mx-auto`}>
                 <h1 className={`font-normal text-3xl`}>Our <span className={`text-[${colors.mainOrange}]`}>Features</span></h1>
                 <p className={`text-slate-500 mt-2`}>Maecenas tempus tellus eget condimentum rhoncus sem quam semper <br/> libero pulvinar hendrerit id lorem.</p>
             </div>
 
-            <div className={`lg:flex my-14 justify-between items-center`}>
+            <div className={`md:flex my-14 justify-between items-center`}>
                 <div className={`w-auto flex-2`}>
                     <img className={`w-[420px] h-[420px] object-contain`} src={features} alt=""/>
                 </div>
@@ -34,7 +34,7 @@ export function OurFeatures (){
                 </div>
             </div>
 
-            <div className={`lg:flex my-14 justify-between items-center`}>
+            <div className={`md:flex my-14 justify-between items-center`}>
                 <div className={`w-auto flex-1`}>
                     <div className="flex ">
                         <div className="relative">
@@ -49,18 +49,18 @@ export function OurFeatures (){
                     <p className={`text-slate-500 mt-6 pr-6`}>Et harum quidem rerum facilise expedita distinctio nam libero tempore cum soluta nobis as eligendi optio cumque nihil quis nostrum exercitationem impedit minus omnis repellendus.</p>
                     <div className={`mt-6 flex`}><p className={`text-[${colors.mainOrange}] font-medium pr-2`}>Read More</p>{ICONS.rightArrow}</div>
                 </div>
-                <span className={`lg:mx-16`}></span>
+                <span className={`md:mx-16`}></span>
                 <div className={`w-auto flex-2`}>
                     <img className={`w-[420px] h-[420px] object-contain`} src={featuresSecond} alt=""/>
                 </div>
 
             </div>
 
-            <div className={`lg:flex lg:my-14 my-4 justify-between items-center`}>
+            <div className={`md:flex md:my-14 my-4 justify-between items-center`}>
                 <div className={`w-auto flex-2`}>
                     <img className={`w-[420px] h-[420px] object-contain`} src={featuresThird} alt=""/>
                 </div>
-                <span className={`lg:mx-16`}></span>
+                <span className={`md:mx-16`}></span>
                 <div className={`w-auto flex-1`}>
                     <div className="flex">
                         <div className="relative">

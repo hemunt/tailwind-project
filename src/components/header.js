@@ -11,8 +11,8 @@ export function Header(){
 
     },[]);
 
-    return <header className={`w-full h-auto bg-[${colors.lightBackgroundColor}] px-10 lg:px-64`}>
-            <div className="lg:flex justify-between items-center">
+    return <header className={`w-full h-auto bg-[${colors.lightBackgroundColor}] px-10 md:px-64`}>
+            <div className="md:flex justify-between items-center">
                 <div className="py-8 md:my-52">
                     <h2 className={`text-[#2558AB] font-medium`}>CREATIVE MARKETING</h2>
                     <h1 className={`font-medium text-4xl mt-6 line-clamp-2 text-slate-800`}>Get Your Professional<br/> Website Done With <span className={`font-bold text-[#FF7549]`}>Deoxa</span></h1>
