@@ -7,15 +7,20 @@ import {lightColors} from "../store/colorsSlice";
 import {AboutUs} from "../components/about";
 import {OurFeatures} from "../components/features";
 import {Footer} from "../components/footer";
+import {useSelector} from "react-redux";
+
 export function HomeScreen(){
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const colors = useSelector((state) => state.appColors.value);
+
+    console.log(`IS Dark ${colors.isDark}`);
     useEffect(()=>{
         dispatch(lightColors());
     },[]);
 
 
-    return <div>
+    return <div className={colors.isDark ? `dark`:``}>
         <NavBar/>
         <Header/>
         <OutService/>
