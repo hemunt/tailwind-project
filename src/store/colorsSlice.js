@@ -23,16 +23,16 @@ export const counterSlice = createSlice({
                lightBackgroundColor: "#F7F9FE",
            }
         },
-        darkColors: (state) => {
-            state.value = {
-                isDark:true,
-                mainOrange : "#FF7549",
-                mainBlue:"#2558AB",
-                titleTextColor:"text-white",
-                lightBlack:"text-slate-400",
-                lightBackgroundColor: "#1D1D1D",
-            }
-        },
+        // darkColors: (state) => {
+        //     state.value = {
+        //         isDark:true,
+        //         mainOrange : "#FF7549",
+        //         mainBlue:"#2558AB",
+        //         titleTextColor:"text-white",
+        //         lightBlack:"text-slate-400",
+        //         lightBackgroundColor: "#1D1D1D",
+        //     }
+        // },
 
         // incrementByAmount: (state, action) => {
         //     state.value += action.payload

@@ -7,19 +7,15 @@ export function NavBar(themeData){
 
     const [darkModIcon, setDarkModIcon] = useState("LIGHT");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const dispatch = useDispatch()
-
     const themeHandler =(e)=>{
         if(darkModIcon === "LIGHT"){
             setDarkModIcon("DARK");
-            dispatch(darkColors());
         } else {
             setDarkModIcon("LIGHT");
-            dispatch(lightColors());
         }
     }
 
-    return <> <nav className="w-full py-5 px-10 sm:px-80 bg-[#F7F9FE] flex justify-between items-center ">
+    return <> <nav className="w-full py-5 px-10 sm:px-64 bg-[#F7F9FE] flex justify-between items-center ">
         <div className={`flex items-center`}>
             <img className="h-10 w-10 object-contain "src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
             <h1 className={`pl-2 text-xl font-bold text-slate-600`}>REACT</h1>

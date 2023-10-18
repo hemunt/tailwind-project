@@ -5,7 +5,7 @@ export function Footer(){
     const colors = useSelector((state) => state.appColors.value);
 
     return <>
-        <div className={`w-full h-auto lg:px-96 px-20 py-20 bg-[${colors.lightBackgroundColor}]`}>
+        <div className={`w-full h-auto lg:px-64 px-20 py-20 bg-[${colors.lightBackgroundColor}]`}>
             <div className={`lg:flex my-14`}>
                 <div className={`w-auto flex-1 pt-6`}>
                     <div className={`flex items-center`}>
