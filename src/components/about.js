@@ -6,7 +6,7 @@ export function AboutUs (){
     const colors = useSelector((state) => state.appColors.value);
 
     return <>
-        <div className={`w-full h-auto px-10 md:px-96 bg-[${colors.lightBackgroundColor}] py-20`}>
+        <div className={`w-full h-auto px-10 md:px-80 bg-[${colors.lightBackgroundColor}] py-20`}>
             <div className={`w-full text-center mx-auto `}>
                 <h1 className={`font-normal text-3xl`}>About <span className={`text-[${colors.mainOrange}]`}>Us</span></h1>
                 <p className={`text-slate-500 mt-2`}>Maecenas tempus tellus eget condimentum rhoncus sem quam semper <br/> libero pulvinar hendrerit id lorem.</p>
